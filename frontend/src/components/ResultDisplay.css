@@ -1,0 +1,160 @@
+.result-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.result-header h2 {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.answer-box {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.answer-text {
+  color: #333;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.sources-section {
+  margin-bottom: 25px;
+}
+
+.sources-section h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.source-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #4CAF50;
+  transition: all 0.3s ease;
+}
+
+.source-item:hover {
+  background: #f0f7f0;
+  transform: translateX(5px);
+}
+
+.source-icon {
+  font-size: 1.5rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.source-details {
+  flex: 1;
+}
+
+.source-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.source-meta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.metadata-section {
+  margin-top: 20px;
+}
+
+.metadata-section summary {
+  cursor: pointer;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #666;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.metadata-section summary:hover {
+  background: #efefef;
+}
+
+.metadata-content {
+  margin-top: 10px;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 6px;
+  border-left: 3px solid #2196F3;
+}
+
+.metadata-content p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.metadata-content strong {
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .result-container {
+    padding: 20px;
+  }
+
+  .result-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .answer-box {
+    padding: 15px;
+  }
+
+  .answer-text {
+    font-size: 0.95rem;
+  }
+
+  .source-item {
+    padding: 12px;
+  }
+
+  .source-icon {
+    font-size: 1.2rem;
+  }
+}
